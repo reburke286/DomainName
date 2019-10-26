@@ -14,11 +14,12 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script src="script.js"></script>
         
     
 
-    <title>Practice</title>
+    <title>Domain Names</title>
 </head>
 <body>
     <nav>
@@ -36,7 +37,7 @@
                 <span class="helper-text" data-error="wrong" data-success="right">Type carefully. Wrong inputs will result in poor search results.</span>
             </div>
             <div class="input-field col s2">
-                <button class="btn waves-effect waves-light" type="submit" name="action">Add
+                <button class="btn waves-effect waves-light" type="submit" name="action" id="add-btn">Add
                     <i class="material-icons right">add</i>
                 </button>
             </div>
@@ -51,8 +52,7 @@
         <div class="modal-content">
         <span class="close">&times;</span>
         <h4>Active Domain Names</h4>
-        <ul>
-            <li id="0">Example Domain Name <button>Delete</button></li>
+        <ul id="ul-modal">
         </ul>
         </div>
     </div>  
