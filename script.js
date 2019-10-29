@@ -1,6 +1,19 @@
 $(document).ready(function(){
     $('.modal').modal();
 
+    function closeModal() {
+        var spanX = document.getElementsByClassName("close");
+        var i;
+        for (i = 0; i < spanX.length; i++) {
+            spanX[i].addEventListener("click", function() {
+            this.parentElement.style.display = 'none';
+            document.body.parentElement;
+            });
+        }
+    }
+    // closes the modal using X button
+    closeModal();
+
 
     function addDomainToModal(domain) {
         // variable to create new li element
@@ -10,6 +23,10 @@ $(document).ready(function(){
         // appending li to div
         $("#ul-modal").append(li);
     };
+
+    $(".delete-button").on("click", function() { 
+
+    })
 
     function getDomainsFromLocalStorage() {
         var domains = JSON.parse(localStorage.getItem("domain"));
@@ -51,28 +68,29 @@ $(document).ready(function(){
 
     // function to find domain expirations
     function callDomainNames() {
-        // var today = moment().format("YYYY-MM-DDTHH:MM:ss")
-        var domain = "becca-burke.com";
+        var domain = getDomainsFromLocalStorage();
         var queryURL  = "https://www.whoisxmlapi.com/whoisserver/WhoisService?domainName="
         + domain
         + "&apiKey=at_VJOCbddqnW4UVF2O91OV8GPey30CI"
         + "&outputFormat=" + "JSON";
-    
-        $.ajax({
-            url: queryURL,
-            method: "GET",
-        }).then(function(response) {
-            var expireDate = response.WhoisRecord.expiresDate;
-            var minusMonth = moment(expireDate).subtract(30, "days");
-            var isExpired = !moment(minusMonth).isAfter();
-            var isExpiredMessage = isExpired ? "domain WILL expire within the next 30 days": "domain will not expire within the next 30 days";
-            console.log(isExpiredMessage); 
-            
-        });
+
+        for (var i = 0; i < domain.length; i++) {
+            $.ajax({
+                url: queryURL,
+                method: "GET",
+            }).then(function(response) {
+                var expireDate = response.WhoisRecord.expiresDate;
+                var minusMonth = moment(expireDate).subtract(30, "days");
+                var isExpired = !moment(minusMonth).isAfter();
+                var isExpiredMessage = isExpired ? "domain WILL expire within the next 30 days": "domain will not expire within the next 30 days";
+                console.log(isExpiredMessage); 
+                
+            });
+        }
     };
 
-    // calls the domain expiration function
     callDomainNames();
+    
 
     // function sendEmail() {
     //     $.ajax({
