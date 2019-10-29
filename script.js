@@ -1,78 +1,101 @@
 $(document).ready(function(){
     $('.modal').modal();
 
+    // Isabel's function
+    function closeModal() {
+        var spanX = document.getElementsByClassName("close");
 
+        for (var i = 0; i < spanX.length; i++) {
+            spanX[i].addEventListener("click", function() {
+            this.parentElement.style.display = 'none';
+            document.body.parentElement;
+            });
+        }
+    }
+    // closes the modal using X button
+    closeModal();
+
+    // Becca's code
     function addDomainToModal(domain) {
-        // variable to store string from textarea
-        var name = $("#textarea2").val();
-    
-        // variable to create new li element
         var li = $("<li>");
-        li.html(name + "   <button class=\"delete-button\">Delete</button>");
-        li.id = domainNames.length;
-        // pushing textarea input to array
-        domainNames.push(name);
-        // appending li to div
+        li.html(domain + "   <button class=\"delete-button\">Delete</button>");
         $("#ul-modal").append(li);
-    }
-
-    var domainNames = ["becca-burke.com"];
-
-    function addDomainNamesFromStorage(event) {
-        event.preventDefault();
-        localStorage.getItem("domain");
-
-        addDomainToModal(domainNames); 
-    }
-
-    addDomainNamesFromStorage();
-
-    function addDomainName(event) {
-        //grab the domain name that was just added
-        // add it to the array of all domainNames (hint: you can do this from local storage - no global vars necessary)
-        // add it to the modal
-        // save it to local storage
-
-    }
-
-    
-          // function addPersonToList(event) {
-//     event.preventDefault(); 
-//     var name = nameEl.value;
-//     var li = document.createElement("li");
-//     li.id = people.length;
-//     li.innerHTML = name + " <button>edit</button>";
-//     people.push({ name: name });
-//     peopleListEl.append(li);
-//   }  
-
-
-    // add button - adds domain name to modal & array
-    $('#add-btn').on("click", addDomainName);
-
-    // function to find domain expirations
-    function callDomainNames() {
-        // moment variables
-        var today = moment().format("YYYY-MM-DDTHH:MM:ss")
-        var domain = "becca-burke.com";
-        var queryURL  = "https://www.whoisxmlapi.com/whoisserver/WhoisService?domainName="
-        + domain
-        + "&apiKey=at_VJOCbddqnW4UVF2O91OV8GPey30CI"
-        + "&outputFormat=" + "JSON";
-    
-        $.ajax({
-            url: queryURL,
-            method: "GET"
-        }).then(function(response) {
-            console.log(response);
-            console.log(response.WhoisRecord.expiresDate);
-            console.log(today);
-            
-        });
     };
 
-    // calls the domain expiration function
+    $(".delete-button").on("click", function() { 
+
+    })
+
+    function getDomainsFromLocalStorage() {
+        var domains = JSON.parse(localStorage.getItem("domain"));
+        if (!domains) {
+            domains = [];
+        }
+        return domains;
+    }
+
+    function addDomainNamesToModal() {
+      
+        var domains = getDomainsFromLocalStorage();
+        
+        for (var i = 0; i < domains.length; i++) {
+            addDomainToModal(domains[i]); 
+        }
+    }
+
+    addDomainNamesToModal();
+
+    function addNewDomainToLocalStorage(domain) {
+        var domains = getDomainsFromLocalStorage();
+        domains.push(domain);
+        localStorage.setItem("domain", JSON.stringify(domains));
+    }
+
+    function addDomainName() {
+        var name = $("#textarea2").val();
+        addDomainToModal(name);
+        addNewDomainToLocalStorage(name);
+    }
+
+    $('#add-btn').on("click", addDomainName);
+
+    function callDomainNames() {
+        var domain = getDomainsFromLocalStorage();
+        console.log(domain.length);
+
+        for (var i = 0; i < domain.length; i++) {
+            var queryURL  = "https://www.whoisxmlapi.com/whoisserver/WhoisService?domainName="
+            + domain[i]
+            + "&apiKey=at_VJOCbddqnW4UVF2O91OV8GPey30CI"
+            + "&outputFormat=" + "JSON";
+            $.ajax({
+                url: queryURL,
+                method: "GET",
+            }).then(function(response) {
+
+                // Ty's Code
+                var expireDate = response.WhoisRecord.expiresDate;
+                console.log(response.WhoisRecord.expiresDate);
+                var minusMonth = moment(expireDate).subtract(30, "days");
+                var isExpired = !moment(minusMonth).isAfter();
+                var isExpiredMessage = isExpired ? "domain WILL expire within the next 30 days": "domain will not expire within the next 30 days";
+                console.log(isExpiredMessage); 
+                
+            });
+        }
+    };
+
     callDomainNames();
+    
+
+    // function sendEmail() {
+    //     $.ajax({
+    //         type: "POST",
+    //         url: //php document name,
+
+
+    //     });
+    // }
     
     
   
