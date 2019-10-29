@@ -51,8 +51,7 @@ $(document).ready(function(){
 
     // function to find domain expirations
     function callDomainNames() {
-        // moment variables
-        var today = moment().format("YYYY-MM-DDTHH:MM:ss")
+        // var today = moment().format("YYYY-MM-DDTHH:MM:ss")
         var domain = "becca-burke.com";
         var queryURL  = "https://www.whoisxmlapi.com/whoisserver/WhoisService?domainName="
         + domain
@@ -61,17 +60,28 @@ $(document).ready(function(){
     
         $.ajax({
             url: queryURL,
-            method: "GET"
+            method: "GET",
         }).then(function(response) {
-            console.log(response);
-            console.log(response.WhoisRecord.expiresDate);
-            console.log(today);
+            var expireDate = response.WhoisRecord.expiresDate;
+            var minusMonth = moment(expireDate).subtract(30, "days");
+            var isExpired = !moment(minusMonth).isAfter();
+            var isExpiredMessage = isExpired ? "domain WILL expire within the next 30 days": "domain will not expire within the next 30 days";
+            console.log(isExpiredMessage); 
             
         });
     };
 
     // calls the domain expiration function
     callDomainNames();
+
+    // function sendEmail() {
+    //     $.ajax({
+    //         type: "POST",
+    //         url: //php document name,
+
+
+    //     });
+    // }
     
     
   
