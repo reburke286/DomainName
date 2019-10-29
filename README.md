@@ -1,6 +1,6 @@
 # ProjectOne
 
-<!--ADD Captures/Screenshoots of Application-->
+<!--ADD Captures/Screenshoots of Application REMOVE THIS LINE ONCE COMPLETE-->
 Place application image(s) here or below.
 
 ## Overview and Description:
@@ -15,11 +15,9 @@ Place application image(s) here or below.
 
     The application also performs an API search to find out when domain names are expiring and alerts the Client to those domain expiration dates.
 
-    Currently... usage for this application is client-specific, with the potential to be extended to prospective clients in the future (TBD).
-
+    Currently... usage for this application is client-specific, where Client will maintain and enter domain names. Also, READ ## Licensing below.
 
 ## Application Requirements:
-<!--ADD additinal requirements if any, to make this application run-->
 
     Server Side APIs:
 
@@ -27,10 +25,14 @@ Place application image(s) here or below.
 
     IMAP Intergration
 
-<!--(ADD at least one. *NOTE* Application May Not Require A Third Party API):-->
-Third Party API:
+    Materialize (https://materializecss.com/) created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology.
 
-<!--ADD GitHub Pages or Domain where application will be hosted-->
+    Moment.js (https://momentjs.com/) 
+
+
+    Third Party API: *NOTE* Application did not require any Third Party API
+
+<!--ADD GitHub Pages or Domain where application will be hosted REMOVE THIS LINE ONCE COMPLETE-->
 Deployed to GitHub at: 
 
 
@@ -41,7 +43,7 @@ Deployed to GitHub at:
     Collaborators: Brent Speight, Isabel Gomez, Tywunda Shivers
 
 ## Team Member Responsibilities and Task Completed Within Project:
-<!--ADD/ADJUST Additional Tasks/Responsibilities as they are completed-->
+<!--ADD/ADJUST Additional Tasks/Responsibilities as they are completed REMOVE THIS LINE ONCE COMPLETE-->
 
         Becca Burke: Project Proposal, Initiated Repository, Initialized: ZenHub ProjectOne Issues #1-7; Assigned To: #1 HTML index, #2 create CSS style sheet, #3 creating script file, #4 build out static html, #5 appending new domain names, #6 AJAX function to find expiration dates for domain names, #7 
         
@@ -49,25 +51,36 @@ Deployed to GitHub at:
 
         Isabel Gommez: Created Front End UX/UI for domain names to be added and deleted, Researched information relevant to Issues outlined in ZenHub. 
 
-        Tywunda Shivers: Initialized: ZenHub Issue #8 README.md for ProjectOne and ZenHub Issue #5 README.md for Clients-Data, assisted with Issue #7 using moment to compare expiration date to current time
+        Tywunda Shivers: Initialized: ZenHub Issue #8 README.md for ProjectOne and ZenHub Issue #5 README.md for Clients-Data, assisted with Issue #7 using moment.js to compare expiration date to current time
 
         *NOTE* All Team Members Were Responsible For Reviewing 'REVIEW/QA' Issues Listed Within ZenHub.
 
 
-<!--ADD Resources used to complete this project-->
+<!--ADD Resources used to complete this project REMOVE THIS LINE ONCE COMPLETE-->
 ## Resources:
 
 
-<!--ADD List of Individuals, Websites, Learning Material We Wish To Give Props To-->
 ## Credits:
 
+    2019 Trilogy Education Services: https://www.trilogyed.com/ - Educational Instruction
 
-<!--List any requirements/permissions needed to use this application-->
+    UCLA Extension Full Stack Web Development Bootcamp: https://bootcamp.uclaextension.edu/coding/  Educational Instruction and Facility Usages
+
+    Omar Patel - UCLA Extension Lead Intructor and Student Support
+
+    Julio Valdez, Peter Park, Donte Burney, Jason Cooke - UCLA Extension TAs and Student Support
+
+    Rebecca Liss - Software Engineer and Contributor
+  
 ## Licensing: 
 
+    PERMISSION NOT GRANTED FOR USE OF THIS APPLICATION. 
+
+    THIS APPLICATION IS SPECIFIC AND PRIVY TO CLIENT USE ONLY.
 
 
-<!--TEAM MEMBERS: DO NOT CLOSE ISSUE #8 (THIS README.md) UNTIL ALL SECTIONS NOTED ABOVE HAVE BEEN COMPLETED-->
+
+<!--TEAM MEMBERS: DO NOT CLOSE ISSUE #8 (THIS README.md) UNTIL ALL SECTIONS NOTED ABOVE HAVE BEEN COMPLETED, THEN REMOVE THIS LINE ONCE COMPLETE-->
 
 
 
