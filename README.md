@@ -59,6 +59,10 @@ Deployed to GitHub at:
 <!--ADD Resources used to complete this project REMOVE THIS LINE ONCE COMPLETE-->
 ## Resources:
 
+    github: https://github.com/
+    MDN web docs moz://a: https://developer.mozilla.org/en-US/
+    stack overflow: https://stackoverflow.com/
+    w3schools.com: https://www.w3schools.com/
 
 ## Credits:
 
@@ -76,7 +80,7 @@ Deployed to GitHub at:
 
     PERMISSION NOT GRANTED FOR USE OF THIS APPLICATION. 
 
-    THIS APPLICATION IS SPECIFIC AND PRIVY TO CLIENT USE ONLY.
+    THIS APPLICATION IS SPECIFIC TO CLIENT USE ONLY.
 
 
 
