@@ -19,15 +19,13 @@ Place application image(s) here or below.
 
 ## Application Requirements:
 
-    Server Side APIs:
+    Third Party APIs:
 
         WHOIS API & Parser System (https://www.whoisxmlapi.com/) a domain, IP, and cyber threat intelligence data provider that provides real-time APIs, database downloads, and tools in domain research & monitoring and threat intelligence.
 
-    IMAP Intergration
+        Materialize (https://materializecss.com/) created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology.
 
-    Materialize (https://materializecss.com/) created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology.
-
-    Moment.js (https://momentjs.com/) 
+        Moment.js (https://momentjs.com/) 
 
 
     Third Party API: *NOTE* Application did not require any Third Party API
@@ -49,9 +47,9 @@ Deployed to GitHub at:
         
         Brent Speight: Initialized: ZenHub Clients-Data Issues #1-3; Assigned To: #1 Add HTML to Index page, #2 Create dummy data for project, #3 added dummy data javascript
 
-        Isabel Gommez: Created Front End UX/UI for domain names to be added and deleted, Researched information relevant to Issues outlined in ZenHub. 
+        Isabel Gommez: Created Front End UX/UI for domain names to be added and deleted, Span X to close Modal, CSS for ProjectOne and Client-Data application pages, and  Researched information relevant to Issues outlined in ZenHub. 
 
-        Tywunda Shivers: Initialized: ZenHub Issue #8 README.md for ProjectOne and ZenHub Issue #5 README.md for Clients-Data, assisted with Issue #7 using moment.js to compare expiration date to current time
+        Tywunda Shivers: Initialized: ZenHub Issue #8 README.md for ProjectOne and ZenHub Issue #5 README.md for Clients-Data, assisted with Issue #7 using moment.js to compare expiration date to current time, Issue #12 (adding screenshot) for ProjectOne README.md
 
         *NOTE* All Team Members Were Responsible For Reviewing 'REVIEW/QA' Issues Listed Within ZenHub.
 
@@ -60,15 +58,21 @@ Deployed to GitHub at:
 ## Resources:
 
     github: https://github.com/
+
     MDN web docs moz://a: https://developer.mozilla.org/en-US/
+
     stack overflow: https://stackoverflow.com/
+
     w3schools.com: https://www.w3schools.com/
+    
+    w3resource.com: https://w3resource.com/
+
 
 ## Credits:
 
     2019 Trilogy Education Services: https://www.trilogyed.com/ - Educational Instruction
 
-    UCLA Extension Full Stack Web Development Bootcamp: https://bootcamp.uclaextension.edu/coding/  Educational Instruction and Facility Usages
+    UCLA Extension Full Stack Web Development Bootcamp: https://bootcamp.uclaextension.edu/coding/  Educational Instruction       and Facility Usages
 
     Omar Patel - UCLA Extension Lead Intructor and Student Support
 
