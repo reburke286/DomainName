@@ -75,28 +75,32 @@ $(document).ready(function(){
 
                 // Ty's Code
                 var expireDate = response.WhoisRecord.expiresDate;
-                console.log(response.WhoisRecord.expiresDate);
                 var minusMonth = moment(expireDate).subtract(30, "days");
                 var isExpired = !moment(minusMonth).isAfter();
                 var isExpiredMessage = isExpired ? "domain WILL expire within the next 30 days": "domain will not expire within the next 30 days";
-                console.log(isExpiredMessage); 
                 
+                // Becca's Code
+                var domainName = response.WhoisRecord.domainName;
+                var expireDate = response.WhoisRecord.expiresDate;
+                var expireDateFormatted = moment(expireDate).format("YYYY-MM-DD");
+                var contactEmail = response.WhoisRecord.contactEmail;
+        
+                if (isExpiredMessage === "domain WILL expire within the next 30 days") {
+                    var tdOne = $("<td></td>").text(domainName);
+                    var tdTwo = $("<td></td>").text(expireDateFormatted);
+                    var tdThree = $("<td></td>").text(contactEmail);
+         
+                    var tableRow = $("<tr></tr>");
+                    var tableBody = $(".data-body")
+                    
+                    tableBody.append(tableRow);
+                    tableRow.append(tdOne);
+                    tableRow.append(tdTwo);
+                    tableRow.append(tdThree);
+                };  
             });
-        }
+        };
     };
 
     callDomainNames();
-    
-
-    // function sendEmail() {
-    //     $.ajax({
-    //         type: "POST",
-    //         url: //php document name,
-
-
-    //     });
-    // }
-    
-    
-  
-});
+});    
