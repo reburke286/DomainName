@@ -4,13 +4,13 @@
 
 ## Overview and Description:
 
-    This application was designed to streamline server data onto a user-friendly dashboard that checks the expirations on the Client's domain names using the server-side API, WHOIS API, Inc. © 2014 — 2019 and IMAP intergration.
+    This application was designed to streamline server data onto a user-friendly dashboard that checks the expirations on the Client's domain names using the Third Party API, WHOIS API, Inc. © 2014 — 2019. It is used in tandem with Clients-Data, a separate front-end UI which uses JavaScript and jQuery to dynamically update the dashboard.
 
 ## Features and Usage:
 
     This application is client-specific and was created to help the Client's IT Team manage their business clients for the purpose of assisting with parsing 1000+ daily emails received.
 
-    The application streamlines data into a Dashboard, which performs a daily check to dynamically append data by color-coding the subject of data.
+    The application streamlines data into a Dashboard a.k.a. Clients-Data, which performs a daily check to dynamically append data by using a conditional statement that determines where data goes.
 
     The application also performs an API search to find out when domain names are expiring and alerts the Client to those domain expiration dates.
 
