@@ -28,8 +28,6 @@ Place application image(s) here or below.
         Moment.js (https://momentjs.com/) 
 
 
-    Third Party API: *NOTE* Application did not require any Third Party API
-
 <!--ADD GitHub Pages or Domain where application will be hosted REMOVE THIS LINE ONCE COMPLETE-->
 Deployed to GitHub at: 
 
