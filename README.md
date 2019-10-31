@@ -1,7 +1,6 @@
 # ProjectOne
 
-<!--ADD Captures/Screenshoots of Application REMOVE THIS LINE ONCE COMPLETE-->
-Place application image(s) here or below.
+<img width="917" alt="ProjectOneScreenshot" src="https://user-images.githubusercontent.com/34906126/67915482-627faa00-fb50-11e9-991d-939b1ca6ddfa.png">
 
 ## Overview and Description:
 
