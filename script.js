@@ -1,30 +1,32 @@
+//Becca's code
 $(document).ready(function(){
-    $('.modal').modal();
+    $("#modal1").modal();
+
+    $(".close").on("click", function() {
+        $("#modal1").modal('close');
+    });
 
     // Isabel's function
-    function closeModal() {
-        var spanX = document.getElementsByClassName("close");
+    // function closeModal() {
+    //     var spanX = document.getElementsByClassName("close");
 
-        for (var i = 0; i < spanX.length; i++) {
-            spanX[i].addEventListener("click", function() {
-            this.parentElement.style.display = 'none';
-            document.body.parentElement;
-            });
-        }
-    }
+    //     for (var i = 0; i < spanX.length; i++) {
+    //         spanX[i].addEventListener("click", function() {
+    //         this.parentElement.style.display = 'none';
+    //         document.body.parentElement;
+    //         });
+    //     }
+    // }
+
     // closes the modal using X button
-    closeModal();
+    // closeModal();
 
     // Becca's code
     function addDomainToModal(domain) {
         var li = $("<li>");
-        li.html(domain + "   <button class=\"delete-button\">Delete</button>");
+        li.html("<p>" + domain + "</p>" + "<button class=\"delete-button\">Delete</button>");
         $("#ul-modal").append(li);
     };
-
-    $(".delete-button").on("click", function() { 
-
-    })
 
     function getDomainsFromLocalStorage() {
         var domains = JSON.parse(localStorage.getItem("domain"));
@@ -55,13 +57,36 @@ $(document).ready(function(){
         var name = $("#textarea2").val();
         addDomainToModal(name);
         addNewDomainToLocalStorage(name);
+        $("#textarea2").val("");
     }
+
+    $('#ul-modal').on('click','.delete-button', function(event){    
+        removeLiFromModal(event.target.parentElement);
+        var domainString = $(event.target.parentElement).find("p").text();
+        removeFromLocalStorage(domainString);
+        
+    });
+
+    function removeLiFromModal(li) {
+        li.remove();
+    };
+
+    function removeFromLocalStorage(domain) {
+        var domains = getDomainsFromLocalStorage();
+        var newDomains = [];
+        for (var i = 0; i < domains.length; i++) {
+            if (domains[i] !== domain) {
+                newDomains.push(domains[i]);
+            }
+        }
+        localStorage.setItem("domain", JSON.stringify(newDomains));
+    };
 
     $('#add-btn').on("click", addDomainName);
 
     function callDomainNames() {
         var domain = getDomainsFromLocalStorage();
-        console.log(domain.length);
+        
 
         for (var i = 0; i < domain.length; i++) {
             var queryURL  = "https://www.whoisxmlapi.com/whoisserver/WhoisService?domainName="
@@ -103,4 +128,4 @@ $(document).ready(function(){
     };
 
     callDomainNames();
-});    
+}); 
