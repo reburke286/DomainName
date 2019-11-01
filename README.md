@@ -25,13 +25,14 @@
         Materialize (https://materializecss.com/) created and designed by Google, Material Design is a design language that combines the classic principles of successful design along with innovation and technology.
 
         Moment.js (https://momentjs.com/) a free and open source JavaScript library that removes the need to use the native JavaScript Date object directly. The library is a wrapper for the Date object (in the same way that jQuery is a wrapper for JavaScript) making the object a whole lot easier to work with.
+        
+        Google Fonts (https://fonts.google.com/) a free and open source font catalog that places typography front and center, inviting users to explore, sort, and test fonts for use in more than 135 languages.
 
 
-<!--ADD GitHub Pages or Domain where application will be hosted REMOVE THIS LINE ONCE COMPLETE-->
-Deployed to GitHub at: 
+Deployed to GitHub at: https://reburke286.github.io/ProjectOne/
 
 
-## Project Management:
+## Project Management and Collaborators:
 
     Project Manager: Project Pitch and Repository Initialized by: Becca Burke
 
