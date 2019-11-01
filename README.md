@@ -1,8 +1,8 @@
 # ProjectOne
-### INITIAL URL SCREENSHOT:
+### INITIAL DOMAIN NAMES URL SCREENSHOT:
 <img width="917" alt="ProjectOneScreenshot" src="https://user-images.githubusercontent.com/34906126/67915482-627faa00-fb50-11e9-991d-939b1ca6ddfa.png">
 
-### FINAL URL SCREENSHOT:
+### FINAL DOMAIN NAMES URL SCREENSHOT:
 <img width="974" alt="ProjectOne_URL" src="https://user-images.githubusercontent.com/34906126/68034042-382c0a80-fc7e-11e9-9509-697fdfacb78a.png">
 
 ## Overview and Description:
@@ -53,7 +53,7 @@
 
         Tywunda Shivers: Initialized and Updated: ZenHub Issue #8 README.md for ProjectOne and ZenHub Issue #5 README.md for Clients-Data, assisted with Issue #7 using moment.js to compare expiration date to current time, Issue #12 adding a screenshot of application for ProjectOne README.md
 
-        *NOTE* All Team Members Were Responsible For Reviewing 'REVIEW/QA' Issues Listed Within ZenHub.
+        *NOTE* All Team Members Were Responsible For Reviewing 'REVIEW/QA' Issues Listed Within ZenHub. 
 
 ## Resources:
 
