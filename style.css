@@ -1,10 +1,59 @@
-.close {
-    cursor: pointer;
-    float: right; 
-    padding: 5px 5px; 
-    transform: translate(0%, -50%);
+#modal1 {
+    min-height: 500px;
 }
 
+.close {
+    cursor: pointer;
+    float: right;
+    padding: 5px 5px;
+    transform: translate(0%, -50%);
+}
 .close:hover {
     background: rgb(233, 231, 231);
 }
+/*
+a {
+    font-family: 'ABeeZee', sans-serif;
+    color: whitesmoke;
+}
+nav {
+    background-color: rgb(44, 57, 71);
+}
+body {
+    background-color: rgb(44, 57, 71);
+}
+h4 {
+    font-family: 'Zilla Slab', serif;
+    color: rgb(232, 90, 236);
+}
+.input-field {
+    font-weight: bold;
+}
+.material-icons {
+    font-weight: bold;
+}
+.btn {
+    font-family: 'ABeeZee', sans-serif;
+}
+.helper-text {
+    font-weight: bold;
+    color: rgb(29, 30, 31);
+}
+.add-btn {
+    font-family: 'ABeeZee', sans-serif;
+    background-color: rgb(42, 117, 112);
+}
+.edit-button {
+    background-color: rgb(42, 117, 112);
+}
+th {
+    color: rgb(29, 30, 31);
+}
+.modal-content {
+    background-color: rgb(52, 65, 80);
+}
+.delete-button {
+    position: a
+}
+
+

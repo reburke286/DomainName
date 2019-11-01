@@ -1,29 +1,25 @@
 $(document).ready(function(){
-    $("#modal1").modal();
-
-    $(".close").on("click", function() {
-        $("#modal1").modal('close');
-    })
+    $('.modal').modal();
 
     // Isabel's function
-    // function closeModal() {
-    //     var spanX = document.getElementsByClassName("close");
+    function closeModal() {
+        var spanX = document.getElementsByClassName("close");
 
-    //     for (var i = 0; i < spanX.length; i++) {
-    //         spanX[i].addEventListener("click", function() {
-    //         this.parentElement.style.display = 'none';
-    //         document.body.parentElement;
-    //         });
-    //     }
-    // }
+        for (var i = 0; i < spanX.length; i++) {
+            spanX[i].addEventListener("click", function() {
+            this.parentElement.style.display = 'none';
+            document.body.parentElement;
+            });
+        }
+    }
 
     // closes the modal using X button
-    // closeModal();
+    closeModal();
 
     // Becca's code
     function addDomainToModal(domain) {
         var li = $("<li>");
-        li.html("<p>" + domain + "</p>" + "<button class=\"delete-button\">Delete</button>");
+        li.html(domain + "       <button class=\"delete-button\">Delete</button>");
         $("#ul-modal").append(li);
     };
 
@@ -57,28 +53,19 @@ $(document).ready(function(){
         addDomainToModal(name);
         addNewDomainToLocalStorage(name);
     }
-    $('#ul-modal').on('click','.delete-button', function(event){    
-        removeLiFromModal(event.target.parentElement);
-        var domainString = $(event.target.parentElement).find("p").text();
-        removeFromLocalStorage(domainString);
+
+    $('#ul-modal').on('click','li', function(){
+        console.log("you clicked me");
+        $(this).remove();
+        var domains = getDomainsFromLocalStorage();
+        var index = element.parentElement.getAttribute("data-index");
+        domains.splice(index, 1);
+
+        getDomainsFromLocalStorage();
+        addNewDomainToLocalStorage();
+
         
     });
-
-    function removeLiFromModal(li) {
-        li.remove();
-    };
-
-    function removeFromLocalStorage(domain) {
-        //find the domain from the array
-        var domains = getDomainsFromLocalStorage();
-        var newDomains = [];
-        for (var i = 0; i < domains.length; i++) {
-            if (domains[i] !== domain) {
-                newDomains.push(domains[i]);
-            }
-        }
-        localStorage.setItem("domain", JSON.stringify(newDomains));
-    };
 
     $('#add-btn').on("click", addDomainName);
 
