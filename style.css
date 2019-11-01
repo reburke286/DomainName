@@ -1,83 +1,68 @@
-body {
-    background-color: rgb(44, 57, 71);
-    color: whitesmoke;
-}
-
-#modal1 {
-    min-height: 500px;
-    background-color: rgb(52, 65, 80);
-}
-
 .close {
     cursor: pointer;
     float: right;
     padding: 5px 5px;
     transform: translate(0%, -50%);
 }
-
 .close:hover {
     background: rgb(233, 231, 231);
 }
-
 a {
     font-family: 'ABeeZee', sans-serif;
     color: whitesmoke;
 }
-
 nav {
-    background-color: rgb(124, 132, 141);
+    background-color: rgb(44, 57, 71);
 }
-
+body {
+    background-color: rgb(44, 57, 71);
+}
 h4 {
     font-family: 'Zilla Slab', serif;
-    color: rgb(232, 90, 236);
+    color: whitesmoke;
 }
-
 .input-field {
     font-weight: bold;
 }
-
 .material-icons {
     font-weight: bold;
 }
-
 .btn {
     font-family: 'ABeeZee', sans-serif;
 }
-
-#helper-text {
+.helper-text {
     font-weight: bold;
-    color: rgb(42, 117, 112);
-    font-size: 12px;
+    color: whitesmoke;
 }
 .add-btn {
     font-family: 'ABeeZee', sans-serif;
     background-color: rgb(42, 117, 112);
 }
-
 .edit-button {
     background-color: rgb(42, 117, 112);
 }
-
-.delete-button {
-    position: a
-}
-
 th {
-    color: rgb(42, 117, 112);
+    color: whitesmoke;
     font-size: 25px;
 }
-
 .data-body {
     color: whitesmoke;
     font-size: 20px;
 }
-
 .textarea2 {
     color: whitesmoke;
 }
-
 .materialize-textarea {
     color: whitesmoke;
 }
-
+.modal-content {
+    background-color: rgb(52, 65, 80);
+}
+#ul-modal {
+    position: relative;
+}
+.delete-button {
+    left: 89%;
+    position: fixed;
+    border: 1px solid rgb(52, 65, 80);
+}
