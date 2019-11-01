@@ -1,8 +1,8 @@
 # ProjectOne
-#### INITIAL DOMAIN NAMES URL SCREENSHOT:
+#### DOMAIN NAMES INITIAL URL SCREENSHOT:
 <img width="917" alt="ProjectOneScreenshot" src="https://user-images.githubusercontent.com/34906126/67915482-627faa00-fb50-11e9-991d-939b1ca6ddfa.png">
 
-#### FINAL DOMAIN NAMES URL SCREENSHOT:
+#### DOMAIN NAMES FINAL URL SCREENSHOT:
 <img width="974" alt="ProjectOne_URL" src="https://user-images.githubusercontent.com/34906126/68034042-382c0a80-fc7e-11e9-9509-697fdfacb78a.png">
 
 ## Overview and Description:
