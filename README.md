@@ -39,23 +39,24 @@ Deployed to GitHub at: https://reburke286.github.io/ProjectOne/
     Collaborators: Brent Speight, Isabel Gomez, Tywunda Shivers
 
 ## Team Member Responsibilities and Task Completed Within Project:
-<!--ADD/ADJUST Additional Tasks/Responsibilities as they are completed REMOVE THIS LINE ONCE COMPLETE-->
 
-        Becca Burke: Project Proposal, Initiated Repository, Initialized: ZenHub ProjectOne Issues #1-7; Assigned To: #1 HTML index, #2 create CSS style sheet, #3 creating script file, #4 build out static html, #5 appending new domain names, #6 AJAX function to find expiration dates for domain names, #7 
+### NOTE: Responsibilities and Task for Clients-Data will be outlined in a separate README.md
+
+        Becca Burke: Project Proposal, Initiated Repository, Initialized: ZenHub ProjectOne Issues #1-7 #9-11 and #14-16; Assigned To Issues: #1 HTML index, #2 create CSS style sheet, #3 creating script file, #4 build out static html, #5 appending new domain names, #6 AJAX function to find expiration dates for domain names, #7 using moment to compare expiration date to current time, #9 for loop of domain names, #10 displaying expiring domain names, #11 getting delete buttons to work, #14 merge 10/31 - merge updates, #15 Merge pull request #14 from reburke28/master, and #16 Display expirations - merging final push.
         
-        Brent Speight: Initialized: ZenHub Clients-Data Issues #1-3; Assigned To: #1 Add HTML to Index page, #2 Create dummy data for project, #3 added dummy data javascript
+        Brent Speight: Initialized: ZenHub Clients-Data Issues (SEE Separate README.md
 
-        Isabel Gommez: Created Front End UX/UI for domain names to be added and deleted, Span X to close Modal, CSS for ProjectOne and Client-Data application pages, and  Researched information relevant to Issues outlined in ZenHub. 
+        Isabel Gommez: Created Front End UX/UI for domain names to be added and deleted, Span X to close Modal, CSS for ProjectOne and Client-Data application pages, Researched information relevant to Issues outlined in ZenHub, and  Initialized/Assigned To: Issue #11 getting delete buttons to work and Issue #13 Display expirations.  
 
-        Tywunda Shivers: Initialized: ZenHub Issue #8 README.md for ProjectOne and ZenHub Issue #5 README.md for Clients-Data, assisted with Issue #7 using moment.js to compare expiration date to current time, Issue #12 (adding screenshot) for ProjectOne README.md
+        Tywunda Shivers: Initialized and Updated: ZenHub Issue #8 README.md for ProjectOne and ZenHub Issue #5 README.md for Clients-Data, assisted with Issue #7 using moment.js to compare expiration date to current time, Issue #12 (adding screenshot) for ProjectOne README.md
 
         *NOTE* All Team Members Were Responsible For Reviewing 'REVIEW/QA' Issues Listed Within ZenHub.
 
-
-<!--ADD Resources used to complete this project REMOVE THIS LINE ONCE COMPLETE-->
 ## Resources:
 
     github: https://github.com/
+    
+    Google Fonts: https://fonts.google.com/
 
     MDN web docs moz://a: https://developer.mozilla.org/en-US/
 
@@ -85,8 +86,6 @@ Deployed to GitHub at: https://reburke286.github.io/ProjectOne/
     THIS APPLICATION IS SPECIFIC TO CLIENT USE ONLY.
 
 
-
-<!--TEAM MEMBERS: DO NOT CLOSE ISSUE #8 (THIS README.md) UNTIL ALL SECTIONS NOTED ABOVE HAVE BEEN COMPLETED, THEN REMOVE THIS LINE ONCE COMPLETE-->
 
 
 
