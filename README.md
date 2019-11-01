@@ -47,7 +47,7 @@
 
         Becca Burke: Project Proposal, Initiated Repository, Initialized: ZenHub ProjectOne Issues #1-7 #9-11 and #14-16; Assigned To Issues: #1 HTML index, #2 create CSS style sheet, #3 creating script file, #4 build out static html, #5 appending new domain names, #6 AJAX function to find expiration dates for domain names, #7 using moment to compare expiration date to current time, #9 for loop of domain names, #10 displaying expiring domain names, #11 getting delete buttons to work, #14 merge 10/31 - merge updates, #15 Merge pull request #14 from reburke28/master, and #16 Display expirations - merging final push.
         
-        Brent Speight: Initialized: ZenHub Clients-Data Issues (SEE Separate README.md
+        Brent Speight: Initialized: ZenHub Clients-Data Issues (SEE Separate README.md)
 
         Isabel Gommez: Created Front End UX/UI for domain names to be added and deleted, Span X to close Modal, CSS for ProjectOne and Client-Data application pages, Researched information relevant to Issues outlined in ZenHub, and  Initialized/Assigned To: Issue #11 getting delete buttons to work and Issue #13 Display expirations.  
 
