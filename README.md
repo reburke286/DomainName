@@ -32,7 +32,7 @@
         Google Fonts (https://fonts.google.com/) a free and open source font catalog that places typography front and center, inviting users to explore, sort, and test fonts for use in more than 135 languages.
 
 
-Deployed to GitHub at: https://reburke286.github.io/ProjectOne/
+## Deployed to GitHub at: https://reburke286.github.io/ProjectOne/
 
 
 ## Project Management and Collaborators:
