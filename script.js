@@ -1,9 +1,10 @@
+//Becca's code
 $(document).ready(function(){
     $("#modal1").modal();
 
     $(".close").on("click", function() {
         $("#modal1").modal('close');
-    })
+    });
 
     // Isabel's function
     // function closeModal() {
@@ -56,7 +57,9 @@ $(document).ready(function(){
         var name = $("#textarea2").val();
         addDomainToModal(name);
         addNewDomainToLocalStorage(name);
+        $("#textarea2").val("");
     }
+
     $('#ul-modal').on('click','.delete-button', function(event){    
         removeLiFromModal(event.target.parentElement);
         var domainString = $(event.target.parentElement).find("p").text();
@@ -69,7 +72,6 @@ $(document).ready(function(){
     };
 
     function removeFromLocalStorage(domain) {
-        //find the domain from the array
         var domains = getDomainsFromLocalStorage();
         var newDomains = [];
         for (var i = 0; i < domains.length; i++) {
@@ -127,5 +129,3 @@ $(document).ready(function(){
 
     callDomainNames();
 }); 
-
-
