@@ -49,7 +49,7 @@
         
         Brent Speight: Initialized: ZenHub Clients-Data Issues (SEE Separate README.md)
 
-        Isabel Gommez: Created Front End UX/UI for domain names to be added and deleted, Span X to close Modal, CSS for ProjectOne and Client-Data application pages, Researched information relevant to Issues outlined in ZenHub, and  Initialized/Assigned To: Issue #11 getting delete buttons to work and Issue #13 Display expirations.  
+        Isabel Gomez: Created Front End UX/UI for domain names to be added and deleted, Span X to close Modal, CSS for ProjectOne and Client-Data application pages, Researched information relevant to Issues outlined in ZenHub, and  Initialized/Assigned To: Issue #11 getting delete buttons to work and Issue #13 Display expirations.  
 
         Tywunda Shivers: Initialized and Updated: ZenHub Issue #8 README.md for ProjectOne and ZenHub Issue #5 README.md for Clients-Data, assisted with Issue #7 using moment.js to compare expiration date to current time, Issue #12 adding a screenshot of application for ProjectOne README.md
 
