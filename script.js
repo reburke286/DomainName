@@ -100,7 +100,7 @@ $(document).ready(function(){
         for (var i = 0; i < domain.length; i++) {
             var queryURL  = "https://www.whoisxmlapi.com/whoisserver/WhoisService?domainName="
             + domain[i]
-            + "&apiKey=at_VJOCbddqnW4UVF2O91OV8GPey30CI"
+            + "&apiKey=at_5G21889ccEd0Wx9aTps70b4vaczZ5"
             + "&outputFormat=" + "JSON";
             $.ajax({
                 url: queryURL,
