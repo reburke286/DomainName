@@ -38,7 +38,7 @@ $(document).ready(function(){
             domains = [];
         }
         return domains;
-    }
+    };
     // adds the array from localStorage onto the modal
     function addDomainNamesToModal() {
       

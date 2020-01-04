@@ -1,74 +1,77 @@
-/* Isabel's CSS */
 .close {
-    cursor: pointer;
-    float: right;
-    padding: 5px 5px;
-    transform: translate(0%, -50%);
+  cursor: pointer;
+  float: right;
+  padding: 5px 5px;
+  transform: translate(0%, -50%);
 }
 .close:hover {
-    background: rgb(233, 231, 231);
+  background: rgb(233, 231, 231);
 }
 a {
-    font-family: 'ABeeZee', sans-serif;
-    color: whitesmoke;
+  font-family: "Roboto Condensed", sans-serif;
+  color: whitesmoke;
 }
 nav {
-    background-color: rgb(44, 57, 71);
+  background-color: rgb(44, 57, 71);
 }
 body {
-    background-color: rgb(44, 57, 71);
+  background-color: rgb(196, 198, 201);
 }
 h4 {
-    font-family: 'Zilla Slab', serif;
-    color: whitesmoke;
+  font-family: "Roboto Condensed", sans-serif;
+  color: rgb(44, 57, 71);
+}
+
+h3 {
+  color: whitesmoke;
 }
 .input-field {
-    font-weight: bold;
+  font-weight: bold;
 }
 .material-icons {
-    font-weight: bold;
+  font-weight: bold;
 }
 .btn {
-    font-family: 'ABeeZee', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .helper-text {
-    font-weight: bold;
-    color: whitesmoke;
+  font-weight: bold;
+  color: whitesmoke;
 }
 .add-btn {
-    font-family: 'ABeeZee', sans-serif;
-    background-color: rgb(42, 117, 112);
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: rgb(42, 117, 112);
 }
 .edit-button {
-    background-color: rgb(42, 117, 112);
+  background-color: rgb(42, 117, 112);
 }
 th {
-    color: whitesmoke;
-    font-size: 25px;
+  color: rgb(44, 57, 71);
+  font-size: 25px;
 }
 .data-body {
-    color: whitesmoke;
-    font-size: 20px;
+  color: whitesmoke;
+  font-size: 20px;
 }
 .textarea2 {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 .materialize-textarea {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 #modal1 {
-    background-color: rgb(52, 65, 80);
-    color: whitesmoke;
-    min-height: 400px;
-    width: 50%;
+  background-color: rgb(52, 65, 80);
+  color: whitesmoke;
+  min-height: 400px;
+  width: 50%;
 }
 
 li {
-    position: relative;
+  position: relative;
 }
 .delete-button {
-    position: absolute;
-    right: 10px;
-    top: 5px;
-    border: 1px solid rgb(52, 65, 80);
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  border: 1px solid rgb(52, 65, 80);
 }
