@@ -25,7 +25,8 @@
 ## Installation and Deployment
 
     1. No installation needed. Hard coded in HTML and Javascript.
-    2. Deployed at https://reburke286.github.io/DomainName/
+
+## Deployed to GitHub at: https://reburke286.github.io/DomainName/
 
 ## Application Requirements:
 
@@ -38,8 +39,6 @@
         Moment.js (https://momentjs.com/) a free and open source JavaScript library that removes the need to use the native JavaScript Date object directly. The library is a wrapper for the Date object (in the same way that jQuery is a wrapper for JavaScript) making the object a whole lot easier to work with.
 
         Google Fonts (https://fonts.google.com/) a free and open source font catalog that places typography front and center, inviting users to explore, sort, and test fonts for use in more than 135 languages.
-
-## Deployed to GitHub at: https://reburke286.github.io/ProjectOne/
 
 ## Project Management and Collaborators:
 
